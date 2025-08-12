@@ -48,6 +48,19 @@
             background-size: 20px 20px;
         }
 
+        .date-card {
+            @apply bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-lg transition-transform transform hover:-translate-y-2;
+        }
+        .date-card .day {
+            @apply text-6xl font-extrabold mb-1;
+        }
+        .date-card .month {
+            @apply text-xl text-gray-600 font-semibold tracking-wider;
+        }
+        .date-card .details {
+            @apply text-gray-500 font-medium mt-2;
+        }
+
         /* Animation for elements fading in on scroll */
         .fade-in {
             opacity: 0;
@@ -72,6 +85,7 @@
             <ul class="flex items-center space-x-6 space-x-reverse">
                 <li><a href="#course-571" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">שאלון 35571</a></li>
                 <li><a href="#course-572" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">שאלון 35572</a></li>
+                <li><a href="#dates" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">מועדים</a></li>
                 <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">יצירת קשר</a></li>
             </ul>
         </nav>
@@ -96,6 +110,10 @@
                     <p class="section-headline font-display mt-2 !text-4xl md:!text-5xl tracking-wide">השאלון הראשון ב-5 יחידות</p>
                     <p class="section-subheadline">
                         קורס הכנה ממוקד בזום שלוקח אתכם צעד אחר צעד להצלחה בבגרות.
+                    </p>
+                    <p class="mt-4 text-lg font-semibold text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block ml-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        הקורס ייפתח ב-1 בספטמבר
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-right mt-10 max-w-5xl mx-auto">
                         <div class="feature-card border-r-4 border-blue-500 pr-4">
@@ -137,6 +155,10 @@
                     <p class="section-subheadline">
                         הכנה מלאה ומקיפה לשאלון השני, עם כל הכלים שתצטרכו כדי לקבל ציון גבוה.
                     </p>
+                     <p class="mt-4 text-lg font-semibold text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block ml-2 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        הקורס ייפתח ב-1 בספטמבר
+                    </p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-right mt-10 max-w-5xl mx-auto">
                         <div class="feature-card border-r-4 border-blue-500 pr-4">
                             <h4 class="font-bold text-lg">שיעורים שבועיים</h4>
@@ -168,6 +190,33 @@
             </div>
         </section>
         
+        <!-- Dates Section -->
+        <section id="dates" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center fade-in">
+                <h2 class="section-headline font-display tracking-wide">מועדי בגרויות תשפ"ו</h2>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <!-- Winter Date -->
+                    <div class="date-card">
+                        <div class="day text-blue-600">20-21</div>
+                        <div class="month">ינואר</div>
+                        <div class="details">מועד חורף | ימים שלישי-רביעי</div>
+                    </div>
+                    <!-- Summer A Date -->
+                    <div class="date-card">
+                        <div class="day text-green-600">12-13</div>
+                        <div class="month">מאי</div>
+                        <div class="details">מועד קיץ א' | ימים שלישי-רביעי</div>
+                    </div>
+                    <!-- Summer B Date -->
+                    <div class="date-card">
+                        <div class="day text-purple-600">6</div>
+                        <div class="month">יולי</div>
+                        <div class="details">מועד קיץ ב' | יום שני</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="py-20 md:py-24">
             <div class="container mx-auto px-6 text-center fade-in">
